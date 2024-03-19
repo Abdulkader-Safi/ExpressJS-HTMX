@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Import HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.11"></script>
+    <!-- Import TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>HTMX ExpressJS</title>
+  </head>
+  <body class="bg-blue-900 text-white min-h-screen flex items-center justify-center">
+    <!-- <div class="text-center">
+      <span hx-get="/poll" hx-trigger="every 2s"> loading...</span>
+    </div> -->
+
+    <div class="text-center">
+      <h1 class="text-xl mb-4">Weather In New York</h1>
+      <p class="text-5xl">
+        <span hx-get="/get-temperature" hx-trigger="every 2s"> loading...</span>
+      </p>
+    </div>
+  </body>
+</html>
